@@ -1,0 +1,386 @@
+﻿<Window x:Class="DietHolder2ClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:DietHolder2ClientWPF.Views"
+        xmlns:viewModels="clr-namespace:DietHolder2ClientWPF.ViewModels"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="600" WindowStyle="None">
+    <!-- ======================================================== -->
+
+    <Window.Resources>
+        <DataTemplate x:Name="TdeeCalculatorView" DataType="{x:Type viewModels:TdeeCalculatorViewModel}">
+            <views:TdeeCalculatorView DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="EatenFoodCalculatorView" DataType="{x:Type viewModels:EatenFoodCalculatorViewModel}">
+            <views:EatenFoodCalculatorView DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="StatisticsCornerView" DataType="{x:Type viewModels:StatisticsCornerViewModel}">
+            <views:StatisticsCornerView DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="ProductsCompariserView" DataType="{x:Type viewModels:ProductsCompariserViewModel}">
+            <views:ProductsCompariserView DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="ProductsStatisticsView" DataType="{x:Type viewModels:ProductsStatisticsViewModel}">
+            <views:ProductsStatisticsView DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="MainViewGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="MainViewGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="50"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="SecondaryStackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="SecondaryStackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="50"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Menu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="TdeeOptionListView">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="EatenFoodOptionListView">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="DietStatsOptionListView">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="AboutOptionListView">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Option5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames  SpeedRatio="1.6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Button">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames SpeedRatio="1.6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Button">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" 
+                                           Storyboard.TargetName="MainViewGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" 
+                                           Storyboard.TargetName="MainViewGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" 
+                                           Storyboard.TargetName="SecondaryStackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" 
+                                           Storyboard.TargetName="SecondaryStackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"
+                                           Storyboard.TargetName="Menu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Style x:Key="ApplicationButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Height"  Value="30"/>
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="Margin" Value="5,5,0,5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Grid>
+                            <Ellipse Stroke="Black"
+                                     StrokeThickness="0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Offset="0.1"
+                                                      Color="DeepSkyBlue"/>
+                                        <GradientStop Offset="0.4"
+                                                      Color="SkyBlue"/>
+                                        <GradientStop Offset="1"
+                                                      Color="RoyalBlue"/>
+                                        <RadialGradientBrush.Transform>
+                                            <TransformGroup>
+                                                <ScaleTransform ScaleY="1" />
+                                                <ScaleTransform ScaleX="1" />
+                                            </TransformGroup>
+                                        </RadialGradientBrush.Transform>
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Image Source="{TemplateBinding Tag}" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Opacity" Value="1" />
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Opacity" Value="0.7"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="ListViewItem" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="FontFamily" Value="DK Brushzilla"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Grid>
+                            <Image Stretch="Fill" Source="Assets/ListViewItemBackground.png"/>
+                            <TextBlock Text="{TemplateBinding Tag}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Foreground" Value="Coral"/>
+                    <Setter Property="Opacity" Value="0.85"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Gold"/>
+                    <Setter Property="Opacity" Value="1"/>
+                </Trigger>
+                <Trigger Property="IsSelected"  Value="True">
+                    <Setter Property="Foreground"  Value="Coral"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="MainViewGrid" TargetType="{x:Type Grid}">
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="Width" Value="600"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="MainViewBackgroundGrid" TargetType="{x:Type Rectangle}">
+            <Setter Property="Height" Value="400"/>
+            <Setter Property="Width"  Value="400"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="Fill" Value="Aqua"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Opacity" Value="0.55" />
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" Value="0.45"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ShowMenuButton">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="HideMenuButton">
+            <BeginStoryboard x:Name="CloseMenuBeginStoryboard" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <!-- ======================================================== -->
+
+    <Grid Name="MainGrid">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="RoyalBlue"  Offset="0.1"/>
+                <GradientStop Color="DeepSkyBlue" Offset="0.7"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!--        <Image Grid.Column="1" Source="Assets/MainWindow.png"/>  bajerka -->
+
+        <!--#region Close application button -->
+        <Button HorizontalAlignment="Right" 
+                Style="{StaticResource ApplicationButtonStyle}"  
+                Click="CloseApplicationButton_Click" VerticalAlignment="Top" Margin="0,5,-0.4,0">
+            <Button.Tag>
+                <ImageSource>Assets/Icons/CloseIcon.png</ImageSource>
+            </Button.Tag>
+        </Button>
+        <!--#endregion-->
+        <StackPanel Grid.Column="0" x:Name="Menu" Width="250" 
+                    HorizontalAlignment="Left" Margin="-250,0,0,0" 
+                    RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+
+            <StackPanel x:Name="MenuButtons" Orientation="Horizontal" 
+                        VerticalAlignment="Bottom" Height="85" HorizontalAlignment="Left">
+                <Button Width="45" Height="45" Margin="10,20,5,10" Style="{StaticResource ApplicationButtonStyle}">
+                    <Button.Tag>
+                        <ImageSource>Assets/Icons/SettingsIcon.png</ImageSource>
+                    </Button.Tag>
+                </Button>
+                <Button x:Name="Button" Padding="0" Width="65" Height="65" Margin="0,10,0,0"
+                        Style="{StaticResource ApplicationButtonStyle}">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Tag>
+                        <ImageSource>Assets/Icons/MainIcon.png</ImageSource>
+                    </Button.Tag>
+                </Button>
+                <Button Width="45" Height="45" Margin="5,20,5,10" Style="{StaticResource ApplicationButtonStyle}">
+                    <Button.Tag>
+                        <ImageSource>Assets/Icons/AboutIcon.png</ImageSource>
+                    </Button.Tag>
+                </Button>
+            </StackPanel>
+
+            <ListView Name="OptionsListView" BorderThickness="0" Background="Transparent">
+                <ListViewItem x:Name="TdeeOptionListView" Style="{StaticResource ListViewItem}"
+                               Selected="TdeeOptionListView_Selected">
+                    <ListViewItem.Tag>Calculate Your Tdee</ListViewItem.Tag>
+                </ListViewItem>
+                <ListViewItem x:Name="EatenFoodOptionListView" Style="{StaticResource ListViewItem}" 
+                              Selected="EatenFoodOptionListView_Selected">
+                    <ListViewItem.Tag>Calculate eaten food</ListViewItem.Tag>
+                </ListViewItem>
+                <!--                <ListViewItem x:Name="DietStatsOptionListView" Style="{StaticResource ListViewItem}" -->
+                <!--                              Selected="{Binding ShowStatisticsCorner}" >-->
+                <ListViewItem x:Name="DietStatsOptionListView" Style="{StaticResource ListViewItem}" 
+                                 Selected="StatisticsCornerListView_Selected">
+                    <ListViewItem.Tag>Statistics Corner</ListViewItem.Tag>
+                </ListViewItem>
+                <ListViewItem x:Name="AboutOptionListView" Style="{StaticResource ListViewItem}">
+                    <ListViewItem.Tag>About gym corner</ListViewItem.Tag>
+                </ListViewItem>
+                <ListViewItem x:Name="Option5" Style="{StaticResource ListViewItem}">
+                    <ListViewItem.Tag>Unknown</ListViewItem.Tag>
+                </ListViewItem>
+            </ListView>
+
+        </StackPanel>
+        <Grid x:Name="MainViewGrid" Style="{StaticResource MainViewGrid}" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="360"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--#region Show/Close menu buttons -->
+            <Button Grid.Column="0" Grid.Row="0" x:Name="ShowMenuButton" Style="{StaticResource ApplicationButtonStyle}" 
+                    Click="ShowMenuButton_Click">
+                <Button.Tag>
+                    <ImageSource>Assets/Icons/MenuIcon.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <Button Grid.Column="0" Grid.Row="0" x:Name="HideMenuButton" Style="{StaticResource ApplicationButtonStyle}"
+                    Click="HideMenuButton_Click" Visibility="Collapsed">
+                <Button.Tag>
+                    <ImageSource>Assets/Icons/MenuIcon.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <!--#endregion-->
+
+            <!--#region MainView Background -->
+            <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                       Style="{StaticResource MainViewBackgroundGrid}">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="AliceBlue" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--#endregion-->
+
+            <!--#region Place to display Views -->
+            <ContentControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left"
+                            Content="{Binding}"/>
+            <!--#endregion -->
+
+            <StackPanel Grid.Row="1" Grid.Column="2" x:Name="SecondaryStackPanel">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+
+                <TextBlock TextWrapping="WrapWithOverflow" FontFamily="DK Brushzilla" FontSize="14" Foreground="Brown" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec adipiscing
+                    nulla quis libero egestas lobortis. Duis blandit imperdiet ornare. Nulla
+                    ac arcu ut purus placerat congue.Duis blandit imperdiet ornare. Nulla
+                    ac arcu ut purus placerat congue.Duis blandit imperdiet ornare. Nulla
+                    ac arcu ut purus placerat congue.
+                </TextBlock>
+
+                <Image Source="Assets/Slide1.png" />
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

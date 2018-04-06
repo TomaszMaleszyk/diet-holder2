@@ -1,0 +1,126 @@
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\ApplicationInsights.config
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\csc.exe
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\vbc.exe
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\DietHolder2WebApplication.dll.config
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\DietHolder2WebApplication.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\DietHolder2WebApplication.pdb
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Antlr3.Runtime.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Newtonsoft.Json.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Net.Http.Formatting.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Helpers.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.WebHost.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Mvc.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Optimization.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Razor.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\WebGrease.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Newtonsoft.Json.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Net.Http.Formatting.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Helpers.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Mvc.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Optimization.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Razor.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\obj\Debug\DietHolder2WebApplication.dll
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\obj\Debug\DietHolder2WebApplication.pdb
+C:\Users\Tomasz\Desktop\DietHolder2\DietHolder2\DietHolder2WebApplication\obj\Debug\DietHolder2WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\ApplicationInsights.config
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\csc.exe
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\vbc.exe
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\DietHolder2WebApplication.dll.config
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\DietHolder2WebApplication.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\DietHolder2WebApplication.pdb
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Antlr3.Runtime.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Newtonsoft.Json.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Net.Http.Formatting.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Helpers.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.WebHost.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Mvc.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Optimization.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Razor.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\WebGrease.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Newtonsoft.Json.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Net.Http.Formatting.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Helpers.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Mvc.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Optimization.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.Razor.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\obj\Debug\DietHolder2WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\obj\Debug\DietHolder2WebApplication.dll
+C:\Users\Tomasz\Desktop\Aktualne projekty\DietHolder2\DietHolder2\DietHolder2WebApplication\obj\Debug\DietHolder2WebApplication.pdb

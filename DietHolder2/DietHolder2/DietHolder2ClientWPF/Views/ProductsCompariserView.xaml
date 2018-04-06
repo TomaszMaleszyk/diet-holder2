@@ -1,0 +1,236 @@
+﻿<UserControl x:Class="DietHolder2ClientWPF.Views.ProductsCompariserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:DietHolder2ClientWPF.ViewModels"
+             xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+             Height="350" Width="400">
+
+    <UserControl.DataContext>
+    <viewModels:ProductsCompariserViewModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <Style x:Key="LabelStyle" TargetType="{x:Type Label}">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="DK Longreach"/>
+            <Setter Property="Foreground"  Value="Firebrick"/>
+        </Style>
+        <Style x:Key="LabelValuesStyle" TargetType="{x:Type Label}">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="New Athletic M54"/>
+            <Setter Property="Foreground"  Value="Firebrick"/>
+            <Setter Property="HorizontalAlignment"  Value="Center"/>
+        </Style>
+        <Style x:Key="ComboboxStyle" TargetType="{x:Type ComboBox}">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="DK Longreach"/>
+            <Setter Property="Foreground"  Value="Crimson"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="120"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Opacity="0.35">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="LightBlue"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Grid Grid.Row="0" Grid.Column="0" ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   FontSize="15"
+                   Content="Please choose products what You want to compare."
+                   Style="{StaticResource LabelValuesStyle}" />
+            <ComboBox Grid.Row="1" Grid.Column="0" Style="{StaticResource ComboboxStyle}"
+                  ItemsSource="{Binding Mode=OneTime, Path=ProductsNames}"
+                  SelectedValue="{Binding Mode=OneWayToSource,
+            NotifyOnTargetUpdated=True, Path=FirstUserInputProductName}"/>
+            <ComboBox Grid.Row="1" Grid.Column="1" Style="{StaticResource ComboboxStyle}"
+                  ItemsSource="{Binding Mode=OneTime, Path=ProductsNames}"
+                  SelectedValue="{Binding Mode=OneWayToSource,
+            NotifyOnTargetUpdated=True, Path=SecondUserInputProductName}"/>
+        </Grid>
+        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Opacity="0.35">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="MintCream"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Grid.Row="1" Grid.Column="0" Width="180" Height="60"
+               Margin="10"
+               Source="{Binding FirstProductImageSourcePath}"/>
+        <Image Grid.Row="1" Grid.Column="1" Width="180" Height="60"
+               Margin="10"
+               Source="{Binding SecondProductImageSourcePath}"/>
+
+        <Rectangle Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Opacity="0.35">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="CornflowerBlue"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Grid Grid.Row="2" Grid.Column="0" Width="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+            </Grid.RowDefinitions>
+
+            <Label HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" 
+                   Content="Product details" Style="{StaticResource LabelStyle}"/>
+            <Label FontSize="16" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+                       Content="{Binding Mode=OneWay, Path=SelectedFirstProduct.ProductName}"
+                       Style="{StaticResource LabelValuesStyle}" />
+            <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" 
+                   Content="{Binding Mode=OneWay, Path=SelectedFirstProduct.ProductCarboValue}"
+                       Style="{StaticResource LabelValuesStyle}" />
+            <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" 
+                   Content="{Binding Mode=OneWay, Path=SelectedFirstProduct.ProductProteinValue}"
+                       Style="{StaticResource LabelValuesStyle}" />
+            <Label Grid.Row="2" Grid.Column="2" VerticalAlignment="Top" 
+                   Content="{Binding Mode=OneWay, Path=SelectedFirstProduct.ProductFatValue}"
+                       Style="{StaticResource LabelValuesStyle}"/>
+            <Label Grid.Row="3" FontSize="8" Grid.Column="0" VerticalAlignment="Bottom"
+                       Content="Carbos"
+                       Style="{StaticResource LabelValuesStyle}"/>
+            <Label Grid.Row="3" FontSize="8" Grid.Column="1" VerticalAlignment="Bottom"
+                       Content="Proteins"
+                       Style="{StaticResource LabelValuesStyle}"/>
+            <Label Grid.Row="3" FontSize="8" Grid.Column="2" VerticalAlignment="Bottom" 
+                       Content="Fats"
+                       Style="{StaticResource LabelValuesStyle}"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1" Width="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+            </Grid.RowDefinitions>
+            <Label HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3" 
+                       Content="Product details" Style="{StaticResource LabelStyle}"/>
+            <Label FontSize="16" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+                       Content="{Binding Mode=OneWay, Path=SelectedSecondProduct.ProductName}"
+                       Style="{StaticResource LabelValuesStyle}" />
+            <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" 
+                   Content="{Binding Mode=OneWay, Path=SelectedSecondProduct.ProductCarboValue}"
+                       Style="{StaticResource LabelValuesStyle}" />
+            <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" 
+                   Content="{Binding Mode=OneWay, Path=SelectedSecondProduct.ProductProteinValue}"
+                       Style="{StaticResource LabelValuesStyle}" />
+            <Label Grid.Row="2" Grid.Column="2" VerticalAlignment="Top" 
+                   Content="{Binding Mode=OneWay, Path=SelectedSecondProduct.ProductFatValue}"
+                       Style="{StaticResource LabelValuesStyle}"/>
+            <Label Grid.Row="3" FontSize="8" Grid.Column="0" VerticalAlignment="Bottom"
+                       Content="Carbos"
+                       Style="{StaticResource LabelValuesStyle}"/>
+            <Label Grid.Row="3" FontSize="8" Grid.Column="1" VerticalAlignment="Bottom"
+                       Content="Proteins"
+                       Style="{StaticResource LabelValuesStyle}"/>
+            <Label Grid.Row="3" FontSize="8" Grid.Column="2" VerticalAlignment="Bottom" 
+                       Content="Fats"
+                       Style="{StaticResource LabelValuesStyle}"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Column="0" ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--            <chartingToolkit:Chart Grid.Column="0" Height="70" Width="130"-->
+            <!--                                   Background="Transparent" -->
+            <!--                                   BorderThickness="0" HorizontalAlignment="Left">-->
+            <!--                <chartingToolkit:Chart.Series>-->
+            <!--                    <chartingToolkit:PieSeries  -->
+            <!--                        ItemsSource="{Binding Path=MacroSummary, Mode=OneWay,-->
+            <!--                            UpdateSourceTrigger=PropertyChanged}"-->
+            <!--                        IndependentValueBinding="{Binding Path= Name, Mode=OneWay,-->
+            <!--                            UpdateSourceTrigger=PropertyChanged}"-->
+            <!--                        DependentValueBinding="{Binding Path= Value, Mode=OneWay,-->
+            <!--                            UpdateSourceTrigger=PropertyChanged}"/>-->
+            <!--                </chartingToolkit:Chart.Series>-->
+            <!--                <chartingToolkit:Chart.LegendStyle>-->
+            <!--                    <Style TargetType="Control">-->
+            <!--                        <Setter Property="Width" Value="0"/>-->
+            <!--                        <Setter Property="Height" Value="0"/>-->
+            <!--                    </Style>-->
+            <!--                </chartingToolkit:Chart.LegendStyle>-->
+            <!--            </chartingToolkit:Chart>-->
+
+            <!--<chartingToolkit:Chart Grid.Column="1" Height="70" Width="130"
+                                   Background="Transparent" 
+                                   BorderThickness="0" HorizontalAlignment="Left">
+                <chartingToolkit:Chart.Series>
+                    <chartingToolkit:ColumnSeries  
+                        ItemsSource="{Binding Path=MacroSummary, Mode=OneWay,
+                            UpdateSourceTrigger=PropertyChanged}"
+                        IndependentValueBinding="{Binding Path= Name, Mode=OneWay,
+                            UpdateSourceTrigger=PropertyChanged}"
+                        DependentValueBinding="{Binding Path= Value, Mode=OneWay,
+                            UpdateSourceTrigger=PropertyChanged}"/>
+                </chartingToolkit:Chart.Series>
+                <chartingToolkit:Chart.LegendStyle>
+                    <Style TargetType="Control">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                    </Style>
+                </chartingToolkit:Chart.LegendStyle>
+            </chartingToolkit:Chart>
+
+            <chartingToolkit:Chart Grid.Column="2" Height="70" Width="130"
+                                   Background="Transparent" 
+                                   BorderThickness="0" HorizontalAlignment="Left">
+                <chartingToolkit:Chart.Series>
+                    <chartingToolkit:ColumnSeries  
+                        ItemsSource="{Binding Path=MacroSummary, Mode=OneWay,
+                            UpdateSourceTrigger=PropertyChanged}"
+                        IndependentValueBinding="{Binding Path= Name, Mode=OneWay,
+                            UpdateSourceTrigger=PropertyChanged}"
+                        DependentValueBinding="{Binding Path= Value, Mode=OneWay,
+                            UpdateSourceTrigger=PropertyChanged}"/>
+                </chartingToolkit:Chart.Series>
+                <chartingToolkit:Chart.LegendStyle>
+                    <Style TargetType="Control">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                    </Style>
+                </chartingToolkit:Chart.LegendStyle>
+            </chartingToolkit:Chart>-->
+        </Grid>
+    </Grid>
+
+
+</UserControl>

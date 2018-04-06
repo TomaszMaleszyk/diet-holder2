@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietHolder2WebApplication", "DietHolder2WebApplication\DietHolder2WebApplication.csproj", "{A713CC3C-F53D-4C4F-91E1-3F26E59B5905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietHolder2ClientWPF", "DietHolder2ClientWPF\DietHolder2ClientWPF.csproj", "{00B80C34-90F4-4629-B5A5-E3D0CA887277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A713CC3C-F53D-4C4F-91E1-3F26E59B5905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A713CC3C-F53D-4C4F-91E1-3F26E59B5905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A713CC3C-F53D-4C4F-91E1-3F26E59B5905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A713CC3C-F53D-4C4F-91E1-3F26E59B5905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B80C34-90F4-4629-B5A5-E3D0CA887277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B80C34-90F4-4629-B5A5-E3D0CA887277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B80C34-90F4-4629-B5A5-E3D0CA887277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B80C34-90F4-4629-B5A5-E3D0CA887277}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

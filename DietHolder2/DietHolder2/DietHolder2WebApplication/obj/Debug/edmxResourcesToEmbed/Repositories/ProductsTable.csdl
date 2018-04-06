@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SampleDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="productId" />
+    </Key>
+    <Property Name="productId" Type="Int32" Nullable="false" />
+    <Property Name="productName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="productPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="productCarboValue" Type="Double" />
+    <Property Name="productProteinValue" Type="Double" />
+    <Property Name="productFatValue" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="DietHolder2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Products" />
+  </EntityContainer>
+</Schema>

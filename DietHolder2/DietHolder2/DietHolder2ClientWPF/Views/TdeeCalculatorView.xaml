@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="DietHolder2ClientWPF.Views.TdeeCalculatorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:DietHolder2ClientWPF.ViewModels"
+             Height="350" Width="400">
+    
+    <UserControl.DataContext>
+     <viewModels:TdeeCalculatorViewModel/>
+    </UserControl.DataContext>
+
+    <!-- ======================================================== -->
+    <UserControl.Resources>
+        <Style x:Key="LabelStyle" TargetType="{x:Type Label}">
+            <Setter Property="Margin" Value="10,0,5,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="DK Longreach"/>
+            <Setter Property="Foreground"  Value="Firebrick"/>
+        </Style>
+        <Style x:Key="TextBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="5,3,5,0"/>
+            <Setter Property="Background"  Value="Transparent"/>
+            <Setter Property="Foreground"  Value="DodgerBlue"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="FontFamily" Value="New Athletic M54"/>
+            <Setter Property="FontSize" Value="22"/>
+        </Style>
+        <Style x:Key="ComboboxStyle" TargetType="{x:Type ComboBox}">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="5,3,5,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="DK Longreach"/>
+            <Setter Property="Foreground"  Value="Crimson"/>
+        </Style>
+    </UserControl.Resources>
+
+   
+
+    <!-- ======================================================== -->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="220"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" >
+            <Label FontSize="19" Style="{StaticResource LabelStyle}">Tell me about Yourself...</Label>
+            <Label FontSize="17" Style="{StaticResource LabelStyle}">I wanna know Your:</Label>
+        </StackPanel>
+
+        <StackPanel  Grid.Row="1" Grid.Column="0">
+            <Label Style="{StaticResource LabelStyle}">Height value</Label>
+            <Grid Background="LightCoral">
+                <DockPanel>
+                    <Image HorizontalAlignment="Right" Height="28" Width="23" DockPanel.Dock="Left" Source="../Assets/Icons/HeightIcon.png"/>
+                    <TextBox Name="HeightTextbox" 
+                             Text="{Binding Mode=OneWayToSource, UpdateSourceTrigger=LostFocus, Path= Height}" Style="{StaticResource TextBoxStyle}"/>
+                </DockPanel>
+            </Grid>
+            <Label Style="{StaticResource LabelStyle}">Weight value</Label>
+            <Grid Background="LightCoral">
+                <DockPanel>
+                    <Image HorizontalAlignment="Right" Height="28" Width="23" DockPanel.Dock="Left" Source="../Assets/Icons/WeightIcon.png"/>
+                    <TextBox Name="WeightTextbox" 
+                             Text="{Binding Mode=OneWayToSource, UpdateSourceTrigger=LostFocus, Path=Weight}" Style="{StaticResource TextBoxStyle}"/>
+                </DockPanel>
+            </Grid>
+            <Label Style="{StaticResource LabelStyle}">Age</Label>
+            <Grid Background="LightCoral">
+                <DockPanel>
+                    <Image HorizontalAlignment="Right" Height="28" Width="23" DockPanel.Dock="Left" Source="../Assets/Icons/AgeIcon.png"/>
+                    <TextBox Name="AgeTextbox" 
+                             Text="{Binding Mode=OneWayToSource, UpdateSourceTrigger=LostFocus, Path= Age}" Style="{StaticResource TextBoxStyle}"/>
+                </DockPanel>
+            </Grid>
+            <Label Style="{StaticResource LabelStyle}">Sex</Label>
+            <ComboBox Name="SexCombobox" 
+                      Style="{StaticResource ComboboxStyle}"
+                      ItemsSource="{Binding Mode=OneTime, Path=SexEntries}"
+                      SelectedValue="{Binding Mode=OneWayToSource, Path=Sex}"/>
+        </StackPanel>
+
+        <StackPanel  Grid.Row="1" Grid.Column="1">
+            <Label Style="{StaticResource LabelStyle}">Somatic type</Label>
+            <ComboBox Name="SomaticTypeCombobox"
+                      Style="{StaticResource ComboboxStyle}"
+                      ItemsSource="{Binding Mode=OneTime, Path=SomaticTypeEntries}"
+                      SelectedValue="{Binding Mode=OneWayToSource, Path=SomaticType}"/>
+            <Label Style="{StaticResource LabelStyle}">Activity</Label>
+            <ComboBox Name="DailyActivityCombobox" 
+                      Style="{StaticResource ComboboxStyle}"
+                      ItemsSource="{Binding Mode=OneTime, Path=DailyActivityEntries}"
+                      SelectedValue="{Binding Mode=OneWayToSource,Path=DailyActivity}"/>
+            <Label Style="{StaticResource LabelStyle}">Goal</Label>
+            <ComboBox Name="GoalToRealizeCombobox"
+                      Style="{StaticResource ComboboxStyle}"
+                      ItemsSource="{Binding Mode=OneTime, Path=GoalToRealizeEntries}"
+                      SelectedValue="{Binding Mode=OneWayToSource, Path=GoalToRealize}"/>
+        </StackPanel>
+
+
+        <Button Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" 
+                Name="CalculateButton" Height="30" Margin="10,15,10,0"  
+                Content="Compute my TDEE value"
+                FontFamily="DK Longreach"
+                Foreground="Crimson"
+                VerticalAlignment="Top"
+                Command="{Binding SayHi}" />
+
+    </Grid>
+
+</UserControl>
