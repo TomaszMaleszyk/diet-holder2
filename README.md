@@ -54,6 +54,7 @@ There isn't any installator or something like that but it will be created in fut
 At this moment if You want to start this application You must download this project and compile it on Your Visual Studio.
 
 ### Future plans
+- application installator
 - widely understood optimalization of application working
 - mobile application (Xamarin)
 - enlarge the product base
