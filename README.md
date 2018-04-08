@@ -51,7 +51,7 @@ Main menu is looking like that: </br>
 
 ### Quick start
 There isn't any installator or something like that but it will be created in future. </br>
-At this moment if You want to start this application You must download this project and compile it on Your Visual Studio.
+At this moment if You want to start this application You must download this project and compile it in Your Visual Studio.
 
 ### Future plans
 - application installator
