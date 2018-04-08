@@ -43,7 +43,7 @@ public async Task Post(Products product)
 ```
 to post new product into database using Entity Framework and others, possible to see on this repository.
 
-Desktop application was created in WPF technology </br>
+Desktop application was created in WPF technology. </br>
 Main menu is looking like that: </br>
 
 ![Alt Text](https://media.giphy.com/media/YVEtYDZscnci06giv4/giphy.gif)
